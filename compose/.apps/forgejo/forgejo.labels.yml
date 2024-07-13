@@ -1,0 +1,11 @@
+services:
+  gitea:
+    labels:
+      com.dockstarter.appinfo.deprecated: "false"
+      com.dockstarter.appinfo.description: "Beyond coding. We forge."
+      com.dockstarter.appinfo.nicename: "Forgejo"
+      com.dockstarter.appvars.gitea_enabled: "false"
+      com.dockstarter.appvars.gitea_network_mode: ""
+      com.dockstarter.appvars.gitea_port_3000: "3000"
+      com.dockstarter.appvars.gitea_restart: "unless-stopped"
+      com.dockstarter.appvars.gitea_tag: "7.0-rootless"

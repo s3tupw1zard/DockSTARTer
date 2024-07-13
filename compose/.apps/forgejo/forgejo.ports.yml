@@ -1,0 +1,4 @@
+services:
+  gitea:
+    ports:
+      - ${FORGEJO_PORT_3000}:3000
