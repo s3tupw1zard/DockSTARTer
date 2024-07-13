@@ -405,10 +405,10 @@ main() {
         fi
     else
         if ! check_repo; then
-            warn "Attempting to clone DockSTARTer repo to ${DETECTED_HOMEDIR}/.docker location."
-            git clone https://github.com/s3tupw1zard/DockSTARTer "${DETECTED_HOMEDIR}/.docker" || fatal "Failed to clone DockSTARTer repo.\nFailing command: ${F[C]}git clone https://github.com/s3tupw1zard/DockSTARTer \"${DETECTED_HOMEDIR}/.docker\""
+            warn "Attempting to clone DockSTARTer repo to ${DETECTED_HOMEDIR}/.ds location."
+            git clone https://github.com/s3tupw1zard/DockSTARTer "${DETECTED_HOMEDIR}/.ds" || fatal "Failed to clone DockSTARTer repo.\nFailing command: ${F[C]}git clone https://github.com/s3tupw1zard/DockSTARTer \"${DETECTED_HOMEDIR}/.ds\""
             notice "Performing first run install."
-            exec bash "${DETECTED_HOMEDIR}/.docker/main.sh" "-vi"
+            exec bash "${DETECTED_HOMEDIR}/.ds/main.sh" "-vi"
         fi
     fi
     # Create Symlink
